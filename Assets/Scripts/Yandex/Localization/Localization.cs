@@ -1,4 +1,4 @@
-/*using Lean.Localization;
+using Lean.Localization;
 using Agava.YandexGames;
 using UnityEngine;
 
@@ -38,4 +38,3 @@ public class Localization : MonoBehaviour
         }
     }
 }
-*/

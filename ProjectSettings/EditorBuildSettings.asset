@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ForYandexGameSdk.unity
-    guid: 69153faeb8a886248b94138ba52229ca
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 14b8538685d96344a966517666abc419
@@ -23,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 3da3b1828496586499aa43682b1a2d41
-  - enabled: 0
-    path: Assets/PluginYourGames/Modules/TV/Example/Scenes/TV.unity
-    guid: 3252b4a399e3aa74d8ce64e65289070e
+  - enabled: 1
+    path: Assets/PluginYourGames/Example/Scenes/ExampleYG2.unity
+    guid: e49bf7e58fdb4db4c9df51f0ddb8f327
   m_configObjects: {}
