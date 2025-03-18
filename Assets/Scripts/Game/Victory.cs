@@ -65,7 +65,7 @@ public class Victory : MonoBehaviour
 
     public void RewardForVideoAd()
     {
-        YandexLeaderboard.SetPlayerScore(_bonusCoins);
+        //YandexLeaderboard.SetPlayerScore(_bonusCoins);
         _wallet.AddCoin(_bonusCoins);
         _dataProvider.Save();
     }

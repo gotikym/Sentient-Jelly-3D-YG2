@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using UnityEngine;
 
 public class MainMenuBootsTrap : BootsTrap
@@ -66,10 +65,5 @@ public class MainMenuBootsTrap : BootsTrap
     private void InitializeBackgroundMusic()
     {
         _playBackgroundMusic.Initialize(_music, _dataProvider);
-    }
-
-    private void OnCallGameReady()
-    {
-        YandexGamesSdk.GameReady();
     }
 }

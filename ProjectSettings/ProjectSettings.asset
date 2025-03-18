@@ -579,6 +579,7 @@ PlayerSettings:
   openGLRequireES32: 0
   m_TemplateCustomTags:
     MOBILE_RENDER_SCALE: 2.0
+    PRODUCT_DESCRIPTION: 
     RENDER_SCALE: 1,0
   mobileMTRendering:
     Android: 1
@@ -858,7 +859,7 @@ PlayerSettings:
   webGLTemplate: APPLICATION:Default
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
-  webGLCompressionFormat: 0
+  webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
