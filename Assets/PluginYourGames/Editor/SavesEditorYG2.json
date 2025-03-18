@@ -1,0 +1,18 @@
+{
+  "stringKeys": [],
+  "stringValues": [],
+  "floatKeys": [],
+  "floatValues": [],
+  "intKeys": [],
+  "intValues": [],
+  "intExample": 5,
+  "strExample": "Hello!",
+  "boolExample": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "idSave": 34,
+  "Json": "{\r\n  \"Money\": 3856,\r\n  \"OpenLevels\": 4,\r\n  \"PauseMusicStatus\": 1,\r\n  \"PauseSFXStatus\": 1,\r\n  \"SoundLength\": 0,\r\n  \"SelectedHatSkin\": 1,\r\n  \"SelectedBorderSkin\": 3,\r\n  \"StarsLevels\": [\r\n    0,\r\n    3,\r\n    3,\r\n    3,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0,\r\n    0\r\n  ],\r\n  \"OpenHatSkins\": [\r\n    0,\r\n    10,\r\n    1\r\n  ],\r\n  \"OpenBorderSkins\": [\r\n    0,\r\n    3\r\n  ]\r\n}"
+}
