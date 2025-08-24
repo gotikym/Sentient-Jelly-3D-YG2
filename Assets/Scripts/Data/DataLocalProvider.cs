@@ -19,13 +19,18 @@ public class DataLocalProvider : IDataProvider
     public bool TryLoad()
     {
         //YGInsides.LoadLocal();
-        YGInsides.LoadProgress();
+        //YGInsides.LoadProgress();
         //if (IsDataAlreadyExist() == false) return false;
         Debug.Log(YG2.saves.idSave);
+        Debug.Log("сюда зашли");
         if (YG2.saves.idSave < 1)
+        {
+            Debug.Log("сюда зашли тоже");
             return false;
+        }
 
         _persistentData.PlayerData = JsonConvert.DeserializeObject<PlayerData>(YG2.saves.Json);
+        Debug.Log("зашли перед выходом");
         Debug.Log(YG2.saves.Json.ToString());
         return true;
     }    

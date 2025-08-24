@@ -20,7 +20,6 @@ public abstract class BootsTrap : MonoBehaviour
 
     private void LoadDataOrInit()
     {
-        Debug.Log(_dataProvider.TryLoad());
         if (_dataProvider.TryLoad() == false)
             _persistentPlayerData.PlayerData = new PlayerData();
 
