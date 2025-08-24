@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +14,7 @@ public class OpenLeaderboard : MonoBehaviour
 
     public void TryOpenLeaderboard()
     {
-        PlayerAccount.Authorize();
+        /*PlayerAccount.Authorize();
 
         if (PlayerAccount.IsAuthorized)
         {
@@ -28,7 +27,7 @@ public class OpenLeaderboard : MonoBehaviour
         {
             StartCoroutine(ShowMessage());
             return;
-        }
+        }*/
 
         _leaderboardPanel.SetActive(true);
         _mainPanel.SetActive(false);

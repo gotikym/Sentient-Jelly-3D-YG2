@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using System.IO;
 using UnityEngine;
 using YG;
+using YG.Insides;
 
 public class DataLocalProvider : IDataProvider
 {
@@ -17,11 +18,15 @@ public class DataLocalProvider : IDataProvider
 
     public bool TryLoad()
     {
+        //YGInsides.LoadLocal();
+        YGInsides.LoadProgress();
         //if (IsDataAlreadyExist() == false) return false;
+        Debug.Log(YG2.saves.idSave);
         if (YG2.saves.idSave < 1)
             return false;
 
         _persistentData.PlayerData = JsonConvert.DeserializeObject<PlayerData>(YG2.saves.Json);
+        Debug.Log(YG2.saves.Json.ToString());
         return true;
     }    
 
@@ -38,6 +43,7 @@ public class DataLocalProvider : IDataProvider
         });
 
         YG2.saves.Json = json;
+        Debug.Log(YG2.saves.Json.ToString());
         YG2.SaveProgress();
     }
     //private bool IsDataAlreadyExist() => File.Exists(FullPath);

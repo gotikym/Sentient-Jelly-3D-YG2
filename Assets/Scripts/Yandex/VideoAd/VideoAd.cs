@@ -6,8 +6,10 @@ public class VideoAd : MonoBehaviour
     [SerializeField] private GameObject _WinPanel;
     [SerializeField] private GameObject _WinPanelAfterVideoAd;
 
-    public void Show() =>
-        Agava.YandexGames.VideoAd.Show(OnOpenCallback, OnRewardCallback, OnCloseCallback);
+    public void Show()
+    { 
+        //Agava.YandexGames.VideoAd.Show(OnOpenCallback, OnRewardCallback, OnCloseCallback);
+    }
 
     private void OnOpenCallback()
     {

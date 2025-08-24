@@ -6,7 +6,10 @@ public class Wallet
 
     private IPersistentData _persistentData;
 
-    public Wallet(IPersistentData persistentData) => _persistentData = persistentData;
+    public Wallet(IPersistentData persistentData)
+    {
+        _persistentData = persistentData;
+    }
 
     public void AddCoin(int coins)
     {
@@ -18,7 +21,10 @@ public class Wallet
         CoinsChanged?.Invoke(_persistentData.PlayerData.Money);
     }
 
-    public int GetCurrentCoins() => _persistentData.PlayerData.Money;
+    public int GetCurrentCoins()
+    {
+        return _persistentData.PlayerData.Money;
+    }
 
     public bool IsEnough(int coins)
     {

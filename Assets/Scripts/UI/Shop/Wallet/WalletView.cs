@@ -16,7 +16,13 @@ public class WalletView : MonoBehaviour
         _wallet.CoinsChanged += UpdateValue;
     }
 
-    private void OnDestroy() => _wallet.CoinsChanged -= UpdateValue;
+    private void OnDestroy()
+    {
+        _wallet.CoinsChanged -= UpdateValue;
+    }
 
-    private void UpdateValue(int value) => _value.text = value.ToString();
+    private void UpdateValue(int value)
+    {
+        _value.text = value.ToString();
+    }
 }

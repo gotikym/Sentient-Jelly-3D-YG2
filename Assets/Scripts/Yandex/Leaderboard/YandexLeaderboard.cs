@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +12,7 @@ public class YandexLeaderboard : MonoBehaviour
 
     public static void SetPlayerScore(int score)
     {
-        if (PlayerAccount.IsAuthorized == false)
+        /*if (PlayerAccount.IsAuthorized == false)
             return;
 
         Leaderboard.GetPlayerEntry(LeaderboardName, (result) =>
@@ -27,12 +26,12 @@ public class YandexLeaderboard : MonoBehaviour
             score += result.score;
 
             Leaderboard.SetScore(LeaderboardName, score);
-        });
+        });*/
     }
 
     public void Fill()
     {
-        if (PlayerAccount.IsAuthorized == false)
+        /*if (PlayerAccount.IsAuthorized == false)
             return;
 
         _leaderboardPlayers.Clear();
@@ -52,6 +51,6 @@ public class YandexLeaderboard : MonoBehaviour
             }
 
             _leaderboardView.ConstructLeaderboard(_leaderboardPlayers);
-        });
+        });*/
     }
 }

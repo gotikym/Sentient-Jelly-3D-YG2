@@ -1,4 +1,3 @@
-using Agava.WebUtility;
 using UnityEngine;
 
 public class TestFocus : MonoBehaviour
@@ -9,13 +8,13 @@ public class TestFocus : MonoBehaviour
     private void OnEnable()
     {
         Application.focusChanged += OnInBackgroundChangeApp;
-        WebApplication.InBackgroundChangeEvent += OnInBackgroundCangeWeb;
+        //WebApplication.InBackgroundChangeEvent += OnInBackgroundCangeWeb;
     }
 
     private void OnDisable()
     {
         Application.focusChanged -= OnInBackgroundChangeApp;
-        WebApplication.InBackgroundChangeEvent -= OnInBackgroundCangeWeb;
+        //WebApplication.InBackgroundChangeEvent -= OnInBackgroundCangeWeb;
     }
 
     private void OnInBackgroundChangeApp(bool inApp)

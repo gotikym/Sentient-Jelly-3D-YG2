@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using UnityEngine;
 
 public class MainMenuBootsTrap : BootsTrap
@@ -16,9 +15,6 @@ public class MainMenuBootsTrap : BootsTrap
 
     protected override void Awake()
     {
-#if UNITY_WEBGL && !UNITY_EDITOR
-        OnCallGameReady();
-#endif
         base.Awake();
 
         InitializeWallet();
@@ -66,10 +62,5 @@ public class MainMenuBootsTrap : BootsTrap
     private void InitializeBackgroundMusic()
     {
         _playBackgroundMusic.Initialize(_music, _dataProvider);
-    }
-
-    private void OnCallGameReady()
-    {
-        YandexGamesSdk.GameReady();
     }
 }

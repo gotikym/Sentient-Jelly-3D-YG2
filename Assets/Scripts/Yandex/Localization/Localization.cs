@@ -1,5 +1,4 @@
 using Lean.Localization;
-using Agava.YandexGames;
 using UnityEngine;
 
 public class Localization : MonoBehaviour
@@ -22,7 +21,7 @@ public class Localization : MonoBehaviour
 
     private void ChangeLanguage()
     {
-        string languageCode = YandexGamesSdk.Environment.i18n.lang;
+        /*string languageCode = YandexGamesSdk.Environment.i18n.lang;
 
         switch (languageCode)
         {
@@ -35,6 +34,6 @@ public class Localization : MonoBehaviour
             case Russian:
                 _leanLanguage.SetCurrentLanguage(RussianCode);
                 break;
-        }
+        }*/
     }
 }
